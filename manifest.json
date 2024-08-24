@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Music Volume",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://music.youtube.com/*"],
+      "js": ["content-script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["inject.js"],
+      "matches": ["https://music.youtube.com/*"]
+    }
+  ]
+}

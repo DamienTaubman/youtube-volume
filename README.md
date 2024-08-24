@@ -22,7 +22,4 @@ Click on the "Load unpacked" button.
 In the file dialog, navigate to the directory where you downloaded or cloned the repository and select the folder.
 The extension will now be loaded into Chrome.
 
-4. Using the Extension
-Once the extension is loaded, it will automatically adjust the volume on YouTube Music when you visit the site.
-If you want to change the behavior or adjust the initial volume, you can modify the inject.js file and reload the extension in Chrome.
-
+note: open tabs for ytm will need to be reloaded

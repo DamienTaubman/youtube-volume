@@ -7,18 +7,35 @@ This Chrome extension adjusts the volume slider on YouTube Music using an expone
 
 ## Installation
 
-### 1. Clone or Download the Repository
-First, clone the repository to your local machine or download it as a ZIP file and extract it.
+### Option 1: Install from GitHub Release
 
-```bash
-git clone https://github.com/yourusername/your-repository.git
-```
+1. **Download the Latest Release**
+   - Go to the [Releases page](https://github.com/yourusername/your-repository/releases) on GitHub.
+   - Download the latest `my-extension.zip` file from the release.
 
-2. Load the Extension in Chrome
-Open Google Chrome and go to chrome://extensions/.
-Enable "Developer mode" by toggling the switch in the upper-right corner.
-Click on the "Load unpacked" button.
-In the file dialog, navigate to the directory where you downloaded or cloned the repository and select the folder.
-The extension will now be loaded into Chrome.
+2. **Extract the ZIP File**
+   - After downloading, extract the contents of the ZIP file to a directory on your local machine.
 
-note: open tabs for ytm will need to be reloaded
+3. **Load the Extension in Chrome**
+   - Open Google Chrome and go to `chrome://extensions/`.
+   - Enable "Developer mode" by toggling the switch in the upper-right corner.
+   - Click on the "Load unpacked" button.
+   - In the file dialog, navigate to the directory where you extracted the ZIP file and select the folder.
+   - The extension will now be loaded into Chrome.
+
+   **Note:** Open tabs for YouTube Music will need to be reloaded for the extension to take effect.
+
+### Option 2: Clone or Download the Repository
+
+1. **Clone or Download the Repository**
+   - First, clone the repository to your local machine or download it as a ZIP file and extract it.
+
+   ```bash
+   git clone https://github.com/yourusername/your-repository.git
+
+2. **Load the Extension in Chrome**
+   - Open Google Chrome and go to `chrome://extensions/`.
+   - Enable "Developer mode" by toggling the switch in the upper-right corner.
+   - Click on the "Load unpacked" button.
+   - In the file dialog, navigate to the directory where you extracted the ZIP file and select the folder.
+   - The extension will now be loaded into Chrome.

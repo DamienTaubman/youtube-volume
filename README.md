@@ -28,3 +28,6 @@ This Chrome extension adjusts the volume slider on YouTube Music using an expone
 ### Option 2: Clone or Download the Repository
 
 install the repo dependencies and run the build command, to get a fresh build
+
+
+##Tested in Chrome Version 127.0.6533.120

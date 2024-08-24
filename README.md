@@ -4,7 +4,6 @@ This Chrome extension adjusts the volume slider on YouTube Music using an expone
 
 ## Features
 - Automatically adjusts the volume on YouTube Music based on an exponential scale.
-- Activates automat
 
 ## Installation
 

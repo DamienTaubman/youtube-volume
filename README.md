@@ -10,8 +10,8 @@ This Chrome extension adjusts the volume slider on YouTube Music using an expone
 ### Option 1: Install from GitHub Release
 
 1. **Download the Latest Release**
-   - Go to the [Releases page](https://github.com/yourusername/your-repository/releases) on GitHub.
-   - Download the latest `my-extension.zip` file from the release.
+   - Go to the [Releases page](https://github.com/damientaubman/youtube-volume/releases) on GitHub.
+   - Download the latest file from the release.
 
 2. **Extract the ZIP File**
    - After downloading, extract the contents of the ZIP file to a directory on your local machine.
@@ -27,15 +27,7 @@ This Chrome extension adjusts the volume slider on YouTube Music using an expone
 
 ### Option 2: Clone or Download the Repository
 
-1. **Clone or Download the Repository**
-   - First, clone the repository to your local machine or download it as a ZIP file and extract it.
+install the repo dependencies and run the build command, to get a fresh build
 
-   ```bash
-   git clone https://github.com/yourusername/your-repository.git
 
-2. **Load the Extension in Chrome**
-   - Open Google Chrome and go to `chrome://extensions/`.
-   - Enable "Developer mode" by toggling the switch in the upper-right corner.
-   - Click on the "Load unpacked" button.
-   - In the file dialog, navigate to the directory where you extracted the ZIP file and select the folder.
-   - The extension will now be loaded into Chrome.
+## Tested in Chrome Version 127.0.6533.120

@@ -3,7 +3,7 @@ name: Test and Release
 on:
   push:
     branches:
-      - main  # Trigger on push to the main branch
+      - main 
 
 jobs:
   test-and-release:
@@ -25,7 +25,7 @@ jobs:
         run: npm test
 
       - name: Build project
-        run: npm run build  # Ensure this command generates your `dist/` directory
+        run: npm run build 
 
       - name: Zip the dist directory
         run: zip -r dist.zip dist

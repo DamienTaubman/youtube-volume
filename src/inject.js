@@ -1,19 +1,12 @@
-const originalVolumes = new WeakMap();
+import { clampVolume, refreshVolume, nativeGetVolume, nativeSetVolume } from "./helpers";
 
-const makeVolumeControlExponential = (exponent = 3) => {
-  const { get: nativeGetVolume, set: nativeSetVolume } = Object.getOwnPropertyDescriptor(HTMLMediaElement.prototype, "volume");
-  Object.defineProperty(HTMLMediaElement.prototype, "volume", {
-    get() {
-      return originalVolumes.get(this) ?? nativeGetVolume.call(this) ** (1 / exponent);
-    },
-    set(volume) {
-      originalVolumes.set(this, volume);
-      nativeSetVolume.call(this, volume ** exponent);
-    },
-  });
-};
+Object.defineProperty(HTMLMediaElement.prototype, "volume", {
+  get() {
+    return nativeGetVolume.call(this) ** (1 / 3);
+  },
+  set(volume) {
+    nativeSetVolume.call(this, clampVolume(volume) ** 3);
+  },
+});
 
-const qs = (selector) => document.querySelector(selector);
-const updateVolume = (e = qs(".html5-video-player")) => e.setVolume(e.getVolume());
-
-(() => makeVolumeControlExponential() && updateVolume())();
+refreshVolume();

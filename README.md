@@ -1,4 +1,4 @@
-# YouTube Volume Extension
+# YouTube Music Volume Extension
 
 This Chrome extension adjusts the volume slider on YouTube Music using an exponential scale, ensuring a more natural volume control experience.
 
